@@ -1,11 +1,11 @@
 import React from 'react';
 //import PropTypes from 'prop-types';
 import { Switch, Route } from 'react-router-dom';
+import bootstrap from '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import Header from './Header';
+import Home from './Home';
 
-/*
-  import { Link } from 'react-router-dom';
-  <Link to="/">Home</Link> | <Link to="/newticket">Create Ticket</Link>
-*/
+
 
 function App(){
   var styles = {
@@ -16,14 +16,14 @@ function App(){
         font-family: Helvetica;
       `}</style>
       Capstone-Planning
-      {/* <Switch>
-        <Route exact path='/' component={} />
-      </Switch> */}
+      <Header/>
+      <Switch>
+        <Route exact path='/' component={Home} />
+      </Switch>
     </div>
   );
 }
 
-//App.propTypes = {
-//};
+
 
 export default App;

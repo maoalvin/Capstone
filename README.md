@@ -9,7 +9,8 @@
 
 
 ## Description
-  A website online store that sells women's clothing and sleep wear.
+  A website online store that sells women's clothing and sleep wear by CJ Ancheta.
+  
 
 
   ### Specs
@@ -30,7 +31,7 @@
  * Open localhost: 8080 on Web Browser
 
 
- 
+
 ## Known Bugs
 * No known bugs at this time.
 
