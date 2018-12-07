@@ -10,10 +10,15 @@
 
 ## Description
   A website online store that sells women's clothing and sleep wear by CJ Ancheta.
-  
+
+## Project MVP
+ * Seller can Add and Delete clothes
+ * User can click on clothing to show details
+ * User can view all available clothing and sleep wear products through navbar
 
 
-  ### Specs
+
+ ### Specs 
   | Spec |
   | :-------------     |
   | **Program Gathers User's Log in** |
