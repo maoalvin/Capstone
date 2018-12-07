@@ -4,13 +4,13 @@ import React from 'react';
 
 function Shop() {
   return (
-      <div>
-           <style jsx>{`
+    <div className='container'>
+      <style jsx>{`
                 
         `}</style>
-        <div className='shop'>
-            Shop here
-        </div>
+      <div className='shop'>
+        <h1>Shop here</h1>
+      </div>
     </div>
   );
 }
