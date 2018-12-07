@@ -21,7 +21,7 @@
   | **Program Returns Email Message if product is purchased** |
 
 
-
+![Screenshot](CapstonePlanning.png)
 
 ## Known Bugs
 * No known bugs at this time.
