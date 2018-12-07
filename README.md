@@ -5,7 +5,7 @@
 
 #### By **Julius Bade**
 
-## GitHub Repository: 
+## GitHub Repository: https://github.com/julbade/Capstone-Planning
 
 
 ## Description
@@ -23,6 +23,14 @@
 
 ![Screenshot](CapstonePlanning.png)
 
+## Run this program
+ * Clone this repository https://github.com/julbade/Capstone-Planning
+ * Run `npm install` on terminal or cmd line
+ * Run `npm run start` on terminal or cmd line
+ * Open localhost: 8080 on Web Browser
+
+
+ 
 ## Known Bugs
 * No known bugs at this time.
 
