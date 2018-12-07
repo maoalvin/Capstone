@@ -6,37 +6,69 @@ function Header() {
   return (
       <div className='container'>
            <style jsx>{`
-             #header {
-                 background-color: #35424a;
-                 color: white;
-                 padding-top: 30px;
+             header {
+                 background-color: white;
+                 color: black;
+                 padding: 50px;
                  min-height: 70px;
-                 border-bottom: red 3px solid;
+                 
+                
              }
-             div ul {
+             header ul {
                  margin: 0;
                  padding: 0;
+                 
+                 
+                 
              }
-             div li {
+             header li {
                  float: left;
                  display: inline;
                  padding: 0 20px 0 20px;
+                 
              }
+             header #header {
+                 float: left;
+                 margin-bottom: 5px;
+                 
+             }
+
+             header #header h1 {
+                 margin: 0;
+             }
+             header nav {
+                 float: right;
+                 margin-top: 10px;
+             }
+             button {
+                 margin-left: 2px;
+                 height: 29px;
+                 font-size: 10px;
+                 padding-bottom: 5px;
+             }
+             
 
           
         `}</style>
+        <header>
         <div id='header'>
         <h1>Clothing and Sleep Wear</h1>
+        </div>
         <nav>
             <ul>
-                <li> <Link  style={{ color: 'white', textDecoration: 'none'}} to="/">Home</Link></li>
-                <li><Link  style={{ color: 'white', textDecoration: 'none' }} to="/shop">Shop</Link></li>
-                <li><Link  style={{ color: 'white', textDecoration: 'none' }} to="/about">About Us</Link></li>
-                <li><Link  style={{ color: 'white', textDecoration: 'none' }} to="/about">Sleep Wear</Link></li>
-                <li><Link  style={{ color: 'white', textDecoration: 'none' }} to="/about">Clothing</Link></li>
+                <li><Link  style={{ color: 'black', textDecoration: 'none'}} to="/">Home</Link></li>
+                <li><Link  style={{ color: 'black', textDecoration: 'none' }} to="/shop">Shop</Link></li>
+                <li><Link  style={{ color: 'black', textDecoration: 'none' }} to="/about">About Us</Link></li>
+                <li>
+                    <form>
+                        <input type='text' placeholder='Search'/>    
+                        <button className='btn btn-success'>Search</button>
+                    </form>
+                </li>
+                <li><Link style={{ color: 'black', textDecoration: 'none'}} to="/cart"><span class=""></span></Link> </li>
             </ul>
         </nav>
-        </div>
+        </header>
     </div>
   );
 }

@@ -14,14 +14,15 @@ function App(){
   return (
     <div>
       <style global jsx>{`
-        div { 
+        body { 
           font-family: Helvetica;
           font-size: 15px;
           line-height: 1.5;
           background-color: #f4f4f4;
         }
         .container {
-          width: 80%;
+          max-width: 1700px;
+          width: 90%;
           margin: auto;
           overflow: hidden;
       }
