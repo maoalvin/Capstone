@@ -59,13 +59,7 @@ function Header() {
                 <li><Link  style={{ color: 'black', textDecoration: 'none'}} to="/">Home</Link></li>
                 <li><Link  style={{ color: 'black', textDecoration: 'none' }} to="/shop">Shop</Link></li>
                 <li><Link  style={{ color: 'black', textDecoration: 'none' }} to="/about">About Us</Link></li>
-                <li>
-                    <form>
-                        <input type='text' placeholder='Search'/>    
-                        <button className='btn btn-success'>Search</button>
-                    </form>
-                </li>
-                <li><Link style={{ color: 'black', textDecoration: 'none'}} to="/cart"><span class=""></span></Link> </li>
+                <li><Link style={{ color: 'black', textDecoration: 'none'}} to="/cart">Cart</Link> </li>
             </ul>
         </nav>
         </header>
