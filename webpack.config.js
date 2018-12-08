@@ -51,6 +51,10 @@ module.exports = {
         }
       },
       {
+        test: /\.(png|jpg|jpeg)$/,
+        loader: 'url-loader?limit=8192'
+      },
+      {
         test: /\.css$/,
         loader: ['style-loader', 'css-loader']
       }

@@ -18,14 +18,8 @@ function App(){
           font-family: Helvetica;
           font-size: 15px;
           line-height: 1.5;
-          background-color: #f4f4f4;
         }
-        .container {
-          max-width: 1700px;
-          width: 90%;
-          margin: auto;
-          overflow: hidden;
-      }
+        
       `}</style>
       <Header/>
       <Switch>
