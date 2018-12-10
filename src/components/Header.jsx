@@ -3,10 +3,10 @@ import React from 'react';
 function responsiveNavbar() {
     console.log(responsiveNavbar)
     let x = document.getElementById('myTopnav');
-    if (x.className === 'topnav') {
+    if (x.className === 'jsx-421712327 topnav') {
       x.className += ' responsive';
     }  else {
-      x.className = 'topnav';
+      x.className = 'jsx-421712327 topnav';
     }
   }   
 
@@ -113,7 +113,6 @@ function Header() {
             <i className="fa fa-bars"></i>
           </a>
         </div>
-
           
 
       </header>
