@@ -25,13 +25,11 @@ function Header() {
            
             #links {
               font-size: 15px;  
-              text-align: right;
               color: black;
-              margin-right: 20px;
-              margin-left: 20px;
               justify-content: space-between;
               display: flex;
-              
+              position: static;
+              width: 100%;
               
             }
             
@@ -43,20 +41,22 @@ function Header() {
             
             form {
                 text-align: right;
-                margin-right: 20px;
+                margin-right: 50px;
               }
 
             button {
               padding-top: 2px;
               
             }
+            
          
             
         `}</style>
       <header>
         <div id='header'>
-        <div id="links">
-        <Link style={{ color: 'black' }} to='/login'>Log in</Link> Welcome 
+        <div className='container' id="links">
+        <Link style={{ color: 'black' }} to='/login'>Log in</Link>
+        <Link style={{ color: 'black' }} to='/signup'>Sign Up</Link>  
         <Link style={{ color: 'black' }} to='/cart'>Cart<i className="fa fa-shopping-cart"></i></Link>
         </div>
         <form>

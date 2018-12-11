@@ -8,6 +8,7 @@ import About from './About';
 import Shop from './Shop';
 import Cart from './Cart';
 import Error404 from './Error404';
+import Footer from './Footer';
 
 
 
@@ -30,8 +31,11 @@ function App(){
         <Route  path='/about' component={About} />
         <Route  path='/cart' component={Cart} />
         <Route component={Error404} />
-        
+    
       </Switch>
+      <hr></hr>
+      <Footer/>
+      <br/><br/>
     </div>
   );
 }
