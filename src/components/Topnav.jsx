@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 
 function responsiveNavbar() {
     console.log(responsiveNavbar)
@@ -84,10 +86,9 @@ function Topnav () {
             </style>
             <div className="topnav" id="myTopnav">
           <a href="/" className="active">Home</a>
-          <a href="#shop">Shop</a>
-          <a href="#contact">Contact</a>
-          <a href="#about">About</a>
-          <a href="#cart"><i className="fa fa-shopping-cart"></i></a>
+          <Link to="/shop">Shop</Link>
+          <Link to="/contact">Contact</Link>
+          <Link to="/about">About</Link>
           <a href="javascript:void(0);" className="icon" onClick={responsiveNavbar}>
             <i className="fa fa-bars"></i>
           </a>
