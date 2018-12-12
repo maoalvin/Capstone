@@ -32,7 +32,6 @@ function Topnav () {
                   
                   .topnav a {
                     float: left;
-                   
                     color: black;
                     text-align: center;
                     padding: 14px 16px;

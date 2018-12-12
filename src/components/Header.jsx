@@ -24,46 +24,40 @@ function Header() {
             }
            
             #links {
-              font-size: 15px;  
+              
+              font-size: 25px;  
               color: black;
-              justify-content: space-between;
               display: flex;
-              position: static;
+              position: relative;
               width: 100%;
+              font-family: serif;
+              maring: 0 auto;
               
             }
             
             p {
-                font-size: 20px;
+                font-size: 15px;
                 margin-bottom: 0px;
                 font-family: monospace;
             }
-            
-            form {
-                text-align: right;
-                margin-right: 50px;
-              }
-
-            button {
-              padding-top: 2px;
-              
+            input {
+              border-radius: 10px;
             }
-            
-         
             
         `}</style>
       <header>
-        <div id='header'>
+      <div id='header'>
         <div className='container' id="links">
-        <Link style={{ color: 'black' }} to='/login'>Log in</Link>
-        <Link style={{ color: 'black' }} to='/signup'>Sign Up</Link>  
-        <Link style={{ color: 'black' }} to='/cart'>Cart<i className="fa fa-shopping-cart"></i></Link>
+        <Link style={{ color: 'black' }} to='/login'><i className="fa fa-user-circle"></i></Link>    
+        <Link style={{ color: 'black' }} to='/cart'><i className="fa fa-shopping-cart"></i></Link>
         </div>
+        <hr></hr>
+        
         <form>
               <input type="text" placeholder="Search"/>
-              <button className="button" type="submit"><i className="fa fa-search"></i></button>
+              <button className="btn" type="submit"><i className="fa fa-search"></i></button>
           </form>
-          <h1>Women's Fashion</h1>
+          <h3>Women's Fashion</h3>
           <p>For Fashion Lovers</p>
         </div>
         <Topnav/>
