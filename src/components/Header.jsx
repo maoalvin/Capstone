@@ -14,26 +14,24 @@ function Header() {
             z-index: 9999;
             
             @import url('https://fonts.googleapis.com/css?family=Sofia');
+
+            #links {
+              text-align: right;
+              font-size: 25px;  
+              color: black;
+              display: block;
+              font-family: serif;
+              margin: 5px auto;
+              
+            }
             #header {
                 text-align: center;
                 background-color: white;
                 margin-bottom: 0;
                 font-family: 'Sofia';
-                
-              
+                  
             }
            
-            #links {
-              
-              font-size: 25px;  
-              color: black;
-              display: flex;
-              position: relative;
-              width: 100%;
-              font-family: serif;
-              maring: 0 auto;
-              
-            }
             
             p {
                 font-size: 15px;
@@ -46,16 +44,15 @@ function Header() {
             
         `}</style>
       <header>
-      <div id='header'>
-        <div className='container' id="links">
-        <Link style={{ color: 'black' }} to='/login'><i className="fa fa-user-circle"></i></Link>    
-        <Link style={{ color: 'black' }} to='/cart'><i className="fa fa-shopping-cart"></i></Link>
-        </div>
-        <hr></hr>
-        
-        <form>
-              <input type="text" placeholder="Search"/>
-              <button className="btn" type="submit"><i className="fa fa-search"></i></button>
+        <div id='header'>
+      welcome user
+          <div id="links">
+            <Link style={{ color: 'black' }} to='/login'><i className="fa fa-user-circle"></i></Link>    
+            <Link style={{ color: 'black' }} to='/cart'><i className="fa fa-shopping-cart"></i></Link>
+          </div>
+          <form>
+            <input type="text" placeholder="Search"/>
+            <button className="btn" type="submit"><i className="fa fa-search"></i></button>
           </form>
           <h3>Women's Fashion</h3>
           <p>For Fashion Lovers</p>

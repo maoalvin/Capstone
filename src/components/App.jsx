@@ -9,6 +9,8 @@ import Shop from './Shop';
 import Cart from './Cart';
 import Error404 from './Error404';
 import Footer from './Footer';
+import Login from './Login';
+import Contact from './Contact';
 
 
 
@@ -21,6 +23,7 @@ function App(){
           font-family: Helvetica;
           font-size: 15px;
           line-height: 1.5;
+          
         }
         
       `}</style>
@@ -30,6 +33,8 @@ function App(){
         <Route  path='/shop' component={Shop} />
         <Route  path='/about' component={About} />
         <Route  path='/cart' component={Cart} />
+        <Route  path='/login' component={Login} />
+        <Route  path='/contact' component={Contact} />
         <Route component={Error404} />
     
       </Switch>

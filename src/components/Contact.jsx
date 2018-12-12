@@ -1,14 +1,14 @@
 import React from 'react';
 
-function Login() {
+function Contact() {
     return (
         <div>
             <style>
                 {`
                 `}
             </style>
-            Login
+            Contact
         </div>
     )
 }
-export default Login;
+export default Contact;

@@ -3,20 +3,20 @@ import { Link } from 'react-router-dom';
 
 
 function responsiveNavbar() {
-    console.log(responsiveNavbar)
-    let x = document.getElementById('myTopnav')
-    if (x.className === 'topnav') {
-      x.className += ' responsive';
-    }  else {
-      x.className = 'topnav';
-    }
-  }   
+  console.log(responsiveNavbar);
+  let x = document.getElementById('myTopnav');
+  if (x.className === 'topnav') {
+    x.className += ' responsive';
+  }  else {
+    x.className = 'topnav';
+  }
+}   
 
 function Topnav () {
-    return (
-        <div>
-            <style>
-                {`
+  return (
+    <div>
+      <style>
+        {`
                 .topnav {
                     overflow: hidden;
                     background-color: white;
@@ -82,18 +82,18 @@ function Topnav () {
                   }
                 
                 `}
-            </style>
-            <div className="topnav" id="myTopnav">
-          <a href="/" className="active">Home</a>
-          <Link to="/shop">Shop</Link>
-          <Link to="/contact">Contact</Link>
-          <Link to="/about">About</Link>
-          <a href="javascript:void(0);" className="icon" onClick={responsiveNavbar}>
-            <i className="fa fa-bars"></i>
-          </a>
-        </div>
-        </div>
-    )
+      </style>
+      <div className="topnav" id="myTopnav">
+        <a href="/" className="active">Home</a>
+        <Link to="/shop">Shop</Link>
+        <Link to="/contact">Contact</Link>
+        <Link to="/about">About</Link>
+        <a href="javascript:void(0);" className="icon" onClick={responsiveNavbar}>
+          <i className="fa fa-bars"></i>
+        </a>
+      </div>
+    </div>
+  );
 }
 
 export default Topnav;

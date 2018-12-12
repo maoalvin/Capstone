@@ -1,11 +1,11 @@
 import React from 'react';
 
 function Cart() {
-    return (
-        <div>
+  return (
+    <div>
         Cart Here
-        </div>
-    )
+    </div>
+  );
 }
 
 export default Cart;

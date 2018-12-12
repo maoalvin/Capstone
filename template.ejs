@@ -6,8 +6,10 @@
   <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
   <body>
+    <div class="container" style="max-width: 1300px;">
     <% if (htmlWebpackPlugin.options.appMountId) { %>
       <div id="<%= htmlWebpackPlugin.options.appMountId%>"></div>
     <% } %>
+  </div>
   </body>
 </html>
