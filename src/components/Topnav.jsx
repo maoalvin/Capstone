@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 
+
 function responsiveNavbar() {
   console.log(responsiveNavbar);
   let x = document.getElementById('myTopnav');
@@ -17,6 +18,8 @@ function Topnav () {
     <div>
       <style>
         {`
+                 @import url('https://fonts.googleapis.com/css?family=Crafty Girls');
+                 
                 .topnav {
                     overflow: hidden;
                     background-color: white;
@@ -26,6 +29,7 @@ function Topnav () {
                     text-transform: uppercase;
                     display: flex;
                     justify-content: center;
+                    
                     
                             
                   }
@@ -37,6 +41,7 @@ function Topnav () {
                     padding: 14px 16px;
                     text-decoration: none;
                     font-size: 17px;
+                    font-family: 'Crafty Girls';
                   }
                   
                   .topnav a:hover {
@@ -83,7 +88,9 @@ function Topnav () {
                 
                 `}
       </style>
+      
       <div className="topnav" id="myTopnav">
+        
         <a href="/" className="active">Home</a>
         <Link to="/shop">Shop</Link>
         <Link to="/contact">Contact</Link>

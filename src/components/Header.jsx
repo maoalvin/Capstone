@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 
 
 
+
 function Header() {
 
   return (
@@ -11,9 +12,11 @@ function Header() {
       <style jsx>{`
             position: sticky;
             top: 0;
-            z-index: 9999;
+            z-index: 100;
             
             @import url('https://fonts.googleapis.com/css?family=Sofia');
+           
+           
 
             #links {
               text-align: right;
@@ -23,18 +26,20 @@ function Header() {
               font-family: serif;
               margin: 5px auto;
               
+              
             }
             #header {
-                text-align: center;
+                text-align: left;
                 background-color: white;
                 margin-bottom: 0;
                 font-family: 'Sofia';
+                
                   
             }
            
             
             p {
-                font-size: 15px;
+                font-size: 18px;
                 margin-bottom: 0px;
                 font-family: monospace;
             }
@@ -44,16 +49,16 @@ function Header() {
             
         `}</style>
       <header>
+
         <div id='header'>
-      welcome user
           <div id="links">
-            <Link style={{ color: 'black' }} to='/login'><i className="fa fa-user-circle"></i></Link>    
-            <Link style={{ color: 'black' }} to='/cart'><i className="fa fa-shopping-cart"></i></Link>
+            <p><Link style={{ color: 'black' }} to='/login'><i className="fa fa-user-circle"></i></Link> <Link style={{ color: 'black' }} to='/cart'><i className="fa fa-shopping-cart"></i></Link></p>
           </div>
           <form>
             <input type="text" placeholder="Search"/>
             <button className="btn" type="submit"><i className="fa fa-search"></i></button>
           </form>
+          
           <h3>Women's Fashion</h3>
           <p>For Fashion Lovers</p>
         </div>

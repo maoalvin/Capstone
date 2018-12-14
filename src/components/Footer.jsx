@@ -10,10 +10,11 @@ function Footer() {
                 #footer {
                     justify-content: center;
                     text-align: center;
+                    font-size: 12px;
                 }
                 h1 {
                     font-family: monospace;
-                    font-size: 30px;
+                    font-size: 20px;
                     text-decoration: underline;
                 }
                 #social-media a {
