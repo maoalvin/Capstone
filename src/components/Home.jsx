@@ -4,20 +4,30 @@ import sample from '../assets/image/pajama.jpg';
 import homePicture from '../assets/image/home-image.jpeg';
 import homePicture2 from '../assets/image/home-image3.jpeg';
 import homePicture3 from '../assets/image/home-image3.jpg';
-
+import homePicture4 from '../assets/image/home-image5.jpg';
+import homePicture5 from '../assets/image/home-image6.jpg';
+import homePicture6 from '../assets/image/home-image2.jpeg';
+import homePicture7 from '../assets/image/home-image4.jpeg';
+import homePicture8 from '../assets/image/home-image7.jpg';
+import homePicture9 from '../assets/image/home-image8.jpg';
 
 function Home() {
   return (
     <div>
       <style jsx>{`
              @import url('https://fonts.googleapis.com/css?family=Crafty Girls');
+             @import url('https://fonts.googleapis.com/css?family=Architects Daughter');
            .homePage { 
                background-color: white;
             
-            
+           
            }
+           #sample {
+            max-height: 700px;
+            height: auto;
+          }
             img {
-            max-height: 450px;
+            max-height: 500px;
             height: 100%;
             width: 100%;
             }
@@ -103,41 +113,76 @@ function Home() {
           #picture-row3:hover p {
             opacity: 1;
           }
+        
+
           h4 {
             text-align: center;
             font-size: 20px;
+            font-family: 'Architects Daughter';
           }
-         
+          h4:hover {
+            text-align: center;
+            font-size: 20px;
+            font-family: 'Architects Daughter';
+            background-color: black;
+            color: white;
+            opacity: 0.7;
+          }
+          
+          #homePicture5 {
+            max-width: 850px;
+            width: 100%;
+            padding-left: 10px;
+            
+          }
+          
          
         `}</style>
       <div className='homePage'>
         <div className='container'>
-          <img src={sample} alt="Avatar" className="image"/>
-            <div className="overlay">
+          <img src={sample} id="sample" className="image"/>
+          <div className="overlay">
             <div className="text"><Link to="/shop"><button className="btn btn-secondary">SHOP</button></Link></div>
-           </div>
-         </div>
-         <h2>Sleep Wear For Girls</h2>
+          </div>
         </div>
-        <div className='row'>
+        <h2>Sleep Wear For Girls</h2>
+      </div>
+      <div className='row'>
         <div id='picture-row' className='col col-md-4'>
-        <h4>Superminky Robe</h4>
-        <img  src={homePicture}/>
-        <p>$10.99</p>
+          <h4>Robe</h4>
+          <img  src={homePicture}/>
+          <p>$10.99</p>
         </div>
         <div id='picture-row2' className='col col-md-4'>
-        <h4>Superminky Robe</h4>
-        <img src={homePicture2}/>
-        <p>$5.99</p>
+          <h4>Bloomingdale's</h4>
+          <img src={homePicture2}/>
+          <p>$5.99</p>
         </div>
         <div id='picture-row3' className='col col-md-4'>
-        <h4>Superminky Robe</h4>
-        <img src={homePicture3}/>
-        <p>$7.99</p>
+          <h4>Metallic</h4>
+          <img src={homePicture3}/>
+          <p>$7.99</p>
         </div>
+      </div>
+      <hr/>
+      <br/><br/><br/><br/><br/><br/><br/><br/>
+        
+        
+      <div className='container'>
+        <div className="row">
+          <div className="column-image">
+            <img id="homePicture4" src={homePicture4}/>
+          </div>
+          <div className="column">
+            <img id="homePicture5" src={homePicture5}/>
+          </div>
         </div>
-
-    </div>
+        <h2>Get Exclusive Discounts</h2>
+      </div>
+        <div className='container'>
+        
+      </div> 
+    </div>  
   );
 }
 

@@ -90,7 +90,6 @@ function Topnav () {
       </style>
       
       <div className="topnav" id="myTopnav">
-        
         <a href="/" className="active">Home</a>
         <Link to="/shop">Shop</Link>
         <Link to="/contact">Contact</Link>

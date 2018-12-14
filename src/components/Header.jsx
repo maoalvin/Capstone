@@ -29,7 +29,7 @@ function Header() {
               
             }
             #header {
-                text-align: left;
+                text-align: center;
                 background-color: white;
                 margin-bottom: 0;
                 font-family: 'Sofia';
