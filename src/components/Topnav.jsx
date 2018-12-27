@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 
 
 function responsiveNavbar() {
-  console.log(responsiveNavbar);
   let x = document.getElementById('myTopnav');
   if (x.className === 'topnav') {
     x.className += ' responsive';

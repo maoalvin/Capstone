@@ -6,16 +6,14 @@ import homePicture2 from '../assets/image/home-image3.jpeg';
 import homePicture3 from '../assets/image/home-image3.jpg';
 import homePicture4 from '../assets/image/home-image5.jpg';
 import homePicture5 from '../assets/image/home-image6.jpg';
-import homePicture6 from '../assets/image/home-image2.jpeg';
-import homePicture7 from '../assets/image/home-image4.jpeg';
-import homePicture8 from '../assets/image/home-image7.jpg';
-import homePicture9 from '../assets/image/home-image8.jpg';
+
+
 
 function Home() {
   return (
     <div>
       <style jsx>{`
-             @import url('https://fonts.googleapis.com/css?family=Crafty Girls');
+             @import url('https://fonts.googleapis.com/css?family=Sofia');
              @import url('https://fonts.googleapis.com/css?family=Architects Daughter');
            .homePage { 
                background-color: white;
@@ -28,7 +26,7 @@ function Home() {
           }
             img {
             max-height: 500px;
-            height: 100%;
+            height: auto;
             width: 100%;
             }
            
@@ -85,8 +83,9 @@ function Home() {
 
           h2 {
             text-align: center;
-            font-family: 'Crafty Girls';
+            font-family: 'Sofia';
             margin: 20px; auto;
+            background-color: #cccccc;
           }
           p {
             position: absolute; 
@@ -117,25 +116,19 @@ function Home() {
 
           h4 {
             text-align: center;
-            font-size: 20px;
+            font-size: 30px;
             font-family: 'Architects Daughter';
           }
           h4:hover {
             text-align: center;
-            font-size: 20px;
+            font-size: 30px;
             font-family: 'Architects Daughter';
             background-color: black;
             color: white;
             opacity: 0.7;
           }
           
-          #homePicture5 {
-            max-width: 850px;
-            width: 100%;
-            padding-left: 10px;
-            
-          }
-          
+             
          
         `}</style>
       <div className='homePage'>
@@ -145,7 +138,9 @@ function Home() {
             <div className="text"><Link to="/shop"><button className="btn btn-secondary">SHOP</button></Link></div>
           </div>
         </div>
+        <br/><br/><br/>
         <h2>Sleep Wear For Girls</h2>
+        <br/>
       </div>
       <div className='row'>
         <div id='picture-row' className='col col-md-4'>
@@ -165,23 +160,23 @@ function Home() {
         </div>
       </div>
       <hr/>
-      <br/><br/><br/><br/><br/><br/><br/><br/>
+      <br/><br/><br/><br/><br/>
         
         
       <div className='container'>
         <div className="row">
-          <div className="column-image">
+          <div className="col col-md-4">
             <img id="homePicture4" src={homePicture4}/>
           </div>
-          <div className="column">
+          <div className="col col-md-8">
             <img id="homePicture5" src={homePicture5}/>
           </div>
         </div>
-        <h2>Get Exclusive Discounts</h2>
+        <br/><br/><br/>
+        <h2>Special Products</h2>
       </div>
-        <div className='container'>
-        
-      </div> 
+  
+      <br/><br/><br/>
     </div>  
   );
 }
