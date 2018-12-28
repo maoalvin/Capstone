@@ -5,20 +5,17 @@ import PropTypes from 'react';
 
 function Shop(props) {
 var cloth=null;
-  cloth=$.ajax({
+$.ajax({
+    async: false,  
     type: 'GET',
-    url: 'http://localhost:8000/notes/5c19ecc879259eb130a22343',    
+    url: 'http://localhost:8000/notes/5c19ecc879259eb130a22343',
+    success: function (responseData) {
+      cloth = new Cloth (responseData._id, responseData.name, responseData.imageUrl, responseData.price, responseData.size, responseData.description);
 
-  }).done((responseData) => {
-     cloth = new Cloth (responseData._id, responseData.name, responseData.imageUrl, responseData.price, responseData.size, responseData.description);
-     //console.log(cloth);
+  }
+  });
 
-
-  }).fail(() => {
-
-  }).responseJSON;
-
-      console.log(cloth);
+  console.log(cloth.name);
       return (
         <div className='container'>
           <style jsx>{`
@@ -30,7 +27,7 @@ var cloth=null;
             `}</style>
           <div className='shop'>
             <h3>Shop now</h3>
-            {cloth.name}
+            
           
           </div>
         </div>
@@ -41,7 +38,7 @@ var cloth=null;
 }
 
 Shop.propTypes = {
-  cloth: PropTypes.object,
+  
 }
 
 export default Shop;
